@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block title %}Home - Image Classifier{% endblock %}
+{% block content %}
+<div class="max-w-4xl mx-auto mt-10">
+  <h1 class="text-3xl font-bold mb-6 text-center">Image Classifier Projects</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <a
+      href="{% url 'flower_classifier:predict_flower' %}"
+      class="p-4 bg-white rounded shadow hover:shadow-lg transition"
+    >
+      🌸 Flower Classifier
+    </a>
+  </div>
+</div>
+{% endblock %}
