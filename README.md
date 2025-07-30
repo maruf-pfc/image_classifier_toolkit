@@ -6,9 +6,9 @@ A Django-based web application with multiple image classification projects inclu
 
 ```txt
 image_classifier_toolkit/
-├── common/   # Common utilities, e.g., training helper classes
-├── config/   # Project configuration files (settings, urls, etc.)
-├── datasets/ # Dataset folders for different classifiers
+├── common/                    # Common utilities, e.g., training helper classes
+├── config/                    # Project configuration files (settings, urls, etc.)
+├── datasets/                  # Dataset folders for different classifiers
 │ ├── flowers/
 │ │ ├── daisy/
 │ │ ├── dandelion/
@@ -20,22 +20,22 @@ image_classifier_toolkit/
 │ ├── emotions/
 │ ├── vehicles/
 │ └── digits/
-├── models/ # Saved trained model files (.h5)
+├── models/                    # Saved trained model files (.h5)
 │ ├── flower_model.h5
 │ ├── animal_model.h5
 │ ├── fruit_model.h5
 │ ├── emotion_model.h5
 │ ├── vehicle_model.h5
 │ └── digit_model.h5
-├── media/ # Uploaded media files (images for prediction)
-├── flower_classifier/ # Django app for flower classification
-├── animal_classifier/ # Django app for animal classification
-├── fruit_classifier/ # Django app for fruit classification
-├── emotion_classifier/ # Django app for emotion classification
-├── vehicle_classifier/ # Django app for vehicle classification
-├── digit_classifier/ # Django app for digit classification
-├── manage.py # Django management script
-└── README.md # This file
+├── media/                     # Uploaded media files (images for prediction)
+├── flower_classifier/         # Django app for flower classification
+├── animal_classifier/         # Django app for animal classification
+├── fruit_classifier/          # Django app for fruit classification
+├── emotion_classifier/        # Django app for emotion classification
+├── vehicle_classifier/        # Django app for vehicle classification
+├── digit_classifier/          # Django app for digit classification
+├── manage.py                  # Django management script
+└── README.md
 ```
 
 ## Dataset Downloads

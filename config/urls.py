@@ -26,7 +26,7 @@ urlpatterns = [
 
     # app urls
     path('flower/', include('flower_classifier.urls')),
-    # path('animal/', include('animal_classifier.urls')),
+    path('animal/', include('animal_classifier.urls')),
     # path('fruit/', include('fruit_classifier.urls')),
     # path('emotion/', include('emotion_classifier.urls')),
     # path('vehicle/', include('vehicle_classifier.urls')),

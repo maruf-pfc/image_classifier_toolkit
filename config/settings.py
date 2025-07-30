@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'common',
     'flower_classifier',
-    # 'animal_classifier',
+    'animal_classifier',
     # 'fruit_classifier',
     # 'emotion_classifier',
     # 'vehicle_classifier',
