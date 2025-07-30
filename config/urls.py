@@ -29,8 +29,8 @@ urlpatterns = [
     path('animal/', include('animal_classifier.urls')),
     # path('fruit/', include('fruit_classifier.urls')),
     # path('emotion/', include('emotion_classifier.urls')),
-    # path('vehicle/', include('vehicle_classifier.urls')),
-    # path('digit/', include('digit_classifier.urls')),
+    path('vehicle/', include('vehicle_classifier.urls')),
+    path('digit/', include('digit_classifier.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

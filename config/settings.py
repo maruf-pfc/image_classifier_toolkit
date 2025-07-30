@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'animal_classifier',
     # 'fruit_classifier',
     # 'emotion_classifier',
-    # 'vehicle_classifier',
-    # 'digit_classifier',
+    'vehicle_classifier',
+    'digit_classifier',
 ]
 
 MIDDLEWARE = [

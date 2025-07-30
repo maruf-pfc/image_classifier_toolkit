@@ -15,6 +15,18 @@
     >
       🐶 Animal Classifier
     </a>
+    <a
+      href="{% url 'vehicle_classifier:predict_vehicle' %}"
+      class="p-4 bg-white rounded shadow hover:shadow-lg transition"
+    >
+      🚗 Vehicle Classifier
+    </a>
+    <a
+      href="{% url 'digit_classifier:predict_digit' %}"
+      class="p-4 bg-white rounded shadow hover:shadow-lg transition"
+    >
+      🔢 Digit Classifier
+    </a>
   </div>
 </div>
 {% endblock %}
