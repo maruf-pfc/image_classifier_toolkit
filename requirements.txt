@@ -4,3 +4,4 @@ keras
 pillow
 numpy
 scipy
+gunicorn

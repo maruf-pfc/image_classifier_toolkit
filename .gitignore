@@ -3,4 +3,6 @@ datasets
 __pycache__
 test
 media
-models
+digit_model.h5
+human_emotion_model.h5
+flower_model.h5
