@@ -82,7 +82,7 @@ Similarly, run commands for other classifiers, e.g.:
 ```bash
 python3 manage.py train_animal_model
 python3 manage.py train_fruit_model
-python3 manage.py train_emotion_model
+python3 manage.py train_human_emotion_model
 python3 manage.py train_vehicle_model
 python3 manage.py train_digit_model
 ```
@@ -112,7 +112,11 @@ The home page lists all available classifiers with links to their prediction pag
 
 ## Flower Prediction Demo
 
-![Predict Flower](./images/Predict%20Flower.png)
+![Predict Flower](./images/PredictFlower.png)
+
+## Animal Prediction Demo
+
+![Predict Animal](./images/PredictAnimal.png)
 
 ## Notes
 

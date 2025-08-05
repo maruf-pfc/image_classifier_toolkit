@@ -7,7 +7,7 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 import numpy as np
 from django.core.files.storage import FileSystemStorage
 
-MODEL_PATH = os.path.join(settings.BASE_DIR, 'models', 'vehicle_model.h5')
+MODEL_PATH = os.path.join(settings.BASE_DIR, 'models', 'human_emotion_model.h5')
 model = None
 
 def get_model():
@@ -19,11 +19,14 @@ def get_model():
             raise Exception(f"Model not found. Please train the model first: {MODEL_PATH}")
     return model
 
-def predict_vehicle(request):
+def predict_human_emotion(request):
     result = None
     uploaded_image_url = None
 
-    supported_classes = ['Bus', 'Family Sedan', 'Fire Engine', 'Heavy Truck', 'Jeep', 'Minibus', 'Racing Car', 'Suv', 'Taxi', 'Truck']
+    supported_classes = [
+        'Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 
+        'Sad', 'Surprise'
+    ]
 
     if request.method == 'POST':
         img_file = request.FILES.get('image')
@@ -45,11 +48,11 @@ def predict_vehicle(request):
             preds = model.predict(img_array)
             pred_index = np.argmax(preds[0])
             confidence = preds[0][pred_index]
-            class_names = ['bus', 'family_sedan', 'fire_engine', 'heavy_truck', 'jeep', 'minibus', 'racing_car', 'SUV', 'taxi', 'truck']
+            class_names = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
             predicted_class = class_names[pred_index]
             result = f"Prediction: {predicted_class} ({confidence*100:.2f}%)"
 
-    return render(request, 'vehicle_classifier/predict.html', {
+    return render(request, 'human_emotion_classifier/predict.html', {
         'result': result,
         'uploaded_image_url': uploaded_image_url,
         'supported_classes': supported_classes

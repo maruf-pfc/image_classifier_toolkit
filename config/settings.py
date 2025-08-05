@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'flower_classifier',
     'animal_classifier',
     # 'fruit_classifier',
-    # 'emotion_classifier',
+    'human_emotion_classifier',
     'vehicle_classifier',
     'digit_classifier',
 ]
